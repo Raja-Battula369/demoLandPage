@@ -25,6 +25,7 @@ function App() {
         <Route path="/methodology" element={<Methodology />} />
         <Route path="/contactus" element={<Contact />} />
         <Route path="/client" element={<Client />} />
+        <Route path="*" element={<Home />} />
       </Route>
     )
   );
