@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Noto Sans', sans-serif; */
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.font1 {
+  font-family: 'Noto Sans', sans-serif;
+}
+.font2 {
+  font-family: 'Young Serif', serif;
+}
+.header {
+    width: 100vw;
+    padding: 0 1rem;
+    background-color: #F6F6F6;
+    box-shadow: 0 0.2px 5px black;
+    transition: 500ms;
+    display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Young Serif', serif;
+
+}
+.header:hover {
+    box-shadow: 0 0.2px 10px black;
+
+}
+.header-img {
+    width: 90px;
+    height: 90px;
+    object-fit: fill;
+    mix-blend-mode: darken;
+}
+
+.header-routers {
+    width: 90%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+gap: 0.5rem;
+color: #03045E;
+
+}
+
+.header-router{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.header-router::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #86615C;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .header-router:hover::after {
+    transform: scaleX(1);
+  }
+
+  .header-loginButton {
+    width: 60px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #AFE0CE; 
+    transition: 200ms;
+    color: white;
+    border: 0px solid transparent;
+    cursor: pointer;
+    font-family: 'Young Serif', serif;
+  }
+
+  .header-loginButton:hover {
+    width: 100px;
+  }
+
+  .header-loginButton {
+	-webkit-animation: color-change-5x 8s linear infinite alternate both;
+	        animation: color-change-5x 8s linear infinite alternate both;
+}
+
+.service-heading {
+	-webkit-animation: color-change-5x1 8s linear infinite alternate both;
+	        animation: color-change-5x1 8s linear infinite alternate both;
+}
+
+.home-img {
+	-webkit-animation: puff-in-hor 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-hor 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.home-main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     font-family: 'Noto Sans', sans-serif !important;
+     font-size: 25px;
+    
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: fit-content;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    width: 100%;
+
+  }
+  
+  .content .para {
+    line-height: 1.3;
+    color: black;
+    padding:0.5rem 0.2rem;
+    font-size: medium;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--background);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  
+  .container1 {
+    width: 100%;
+    height: 100%;
+    /* Add your background pattern here */
+    background-image: repeating-radial-gradient(  #e2d1d1 50%, #e7d2d2ee 70%,#f5c7a1 95%);
+    background-size: 50px 50px;
+    border-radius: 10px;
+  }
+  .container2 {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+  }
+
+  /* input css */
+
+  .form {
+    --width-of-input: 300px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+   .input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+
+   .input::placeholder {
+    color: black;
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
+
+
+   /* button animation */
+
+
+   /* login-button animation  */
+
+   .login-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+   }
+
+
+   .login-button:hover {
+    background: #191c19;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #191c19,
+                0 0 25px #191c19,
+                0 0 50px #191c19,
+                0 0 100px #191c19;
+  }
+  .login-button-effect {
+    position: absolute;
+    display: block;
+  }
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-button-effect {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #191c19);
+    animation: btn-anim1 2s linear infinite;
+  }
+
+  /* menubutton   */
+  .menu-button {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   .menu-button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .menu-button:hover::before {
+    width: 9em;
+   }
+/* shadowEffect: */
+
+.shadow-effect {
+  border-radius: 50px;
+  background: #f0eaea;
+  box-shadow:  20px 20px 60px #ccc7c7,
+               -20px -20px 60px #ffffff;
+}
+
+.shadow-effect1 {
+  border-radius: 21px;
+background: #c18181;
+box-shadow:  35px 35px 70px #a46e6e,
+             -35px -35px 70px #de9494;
+
+
+}
+   
+  /* animation */
+@-webkit-keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  @keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  
+  /* for services router */
+
+  @-webkit-keyframes color-change-5x1 {
+    0% {
+      color: #19dcea;
+    }
+    25% {
+      color: #b22cff;
+    }
+    50% {
+      color: #ea2222;
+    }
+    75% {
+      color: #f5be10;
+    }
+    100% {
+      color: #3bd80d;
+    }
+  }
+  @keyframes color-change-5x1 {
+    0% {
+      color: #19dcea;
+    }
+    25% {
+      color: #b22cff;
+    }
+    50% {
+      color: #ea2222;
+    }
+    75% {
+      color: #f5be10;
+    }
+    100% {
+      color: #3bd80d;
+    }
+  }
+  
+
+  @-webkit-keyframes puff-in-hor {
+    0% {
+      -webkit-transform: scaleX(2);
+              transform: scaleX(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-hor {
+    0% {
+      -webkit-transform: scaleX(2);
+              transform: scaleX(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+
+  @media (max-width: 866px) {
+    .header {
+        justify-content: space-between;
+    }    
+    .header-routers {
+            display: none;
+        }
+
+        .header-buttons {
+            display: none;
+        }
+
+  }
+
+
+
+
+
+  .bartender {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.bar {
+    height: 20%;
+    width: 100%;
+    background-color: rgb(59, 199, 199);
+    animation-name: tend;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);  
+    animation-play-state: paused;  
+}
+
+.bar1 {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(59, 199, 199);
+  animation-name: tend1;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  transform: translateX(0%);  
+  
+}
+
+@keyframes tend {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes tend1 {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+.bar:nth-child(2) {
+    animation-delay: 100ms;
+}
+.bar:nth-child(3) {
+    animation-delay: 200ms;
+}
+.bar:nth-child(4) {
+    animation-delay: 300ms;
+}
+.bar:nth-child(5) {
+    animation-delay: 400ms;
+}
+
+.bar1:nth-child(2) {
+  animation-delay: 100ms;
+}
+.bar1:nth-child(3) {
+  animation-delay: 200ms;
+}
+.bar1:nth-child(4) {
+  animation-delay: 300ms;
+}
+.bar1:nth-child(5) {
+  animation-delay: 400ms;
+}
