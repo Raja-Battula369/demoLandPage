@@ -4,7 +4,10 @@ const Contact = () => {
       <div className="p-6  max-md:w-full w-[500px] mx-auto  rounded-md">
         <h1 className="text-blue-500 font-bold">Inquiry Form</h1>
         <hr className="w-[90%] border border-gray-500 " />
-        <form className="w-[95%] mx-auto p-2 mt-4 rounded-md flex flex-col justify-center items-center gap-2 shadow-effect ">
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          className="w-[95%] mx-auto p-2 mt-4 rounded-md flex flex-col justify-center items-center gap-2 shadow-effect "
+        >
           <div className="form">
             <input
               className="input text-black"
