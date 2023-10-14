@@ -1,4 +1,3 @@
-import { Suspense, lazy } from 'react';
 import './App.css';
 import {
   createBrowserRouter,
@@ -7,13 +6,13 @@ import {
   Route,
 } from 'react-router-dom';
 
-const RootLayout = lazy(() => import('./rootLayout'));
-const Services = lazy(() => import('./components/services'));
-const Home = lazy(() => import('./components/home'));
-const Aboutus = lazy(() => import('./components/Aboutus'));
-const Methodology = lazy(() => import('./components/Methodology'));
-const Contact = lazy(() => import('./components/Contact'));
-const Client = lazy(() => import('./components/Client'));
+import RootLayout from './rootLayout';
+import Services from './components/services';
+import Home from './components/home';
+import Aboutus from './components/Aboutus';
+import Methodology from './components/Methodology';
+import Contact from './components/Contact';
+import Client from './components/Client';
 
 function App() {
   const router = createBrowserRouter(
@@ -30,11 +29,7 @@ function App() {
     )
   );
 
-  return (
-    <Suspense>
-      <RouterProvider router={router} />;
-    </Suspense>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
