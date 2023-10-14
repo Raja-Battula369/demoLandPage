@@ -14,8 +14,14 @@ const Header = () => {
         className="flex items-center justify-center cursor-pointer"
         onClick={() => navigate('/')}
       >
-        <img src={logo1} className="w-[80px] h-[90px]    " />
-        <img src={logo2} className="w-[80px] h-[90px]  " />
+        <img
+          src={logo1}
+          className="w-[80px] h-[90px] mix-blend-darken max-sm:z-50   "
+        />
+        <img
+          src={logo2}
+          className="w-[80px] h-[90px] mix-blend-darken max-sm:z-50  "
+        />
       </div>
       <div className="header-routers ">
         <Link className="header-router" to={'services'}>
