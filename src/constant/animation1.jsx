@@ -14,7 +14,7 @@ const Animation1 = () => {
     lastBar.addEventListener('animationend', () => {
       setTimeout(() => {
         setToggle(true);
-      }, 500);
+      }, 275);
     });
   };
 
@@ -24,7 +24,7 @@ const Animation1 = () => {
       document.removeEventListener('animationend', () => {
         setTimeout(() => {
           setToggle(true);
-        }, 500);
+        }, 275);
       });
     };
   }, []);

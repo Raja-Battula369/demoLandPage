@@ -110,8 +110,8 @@ color: #03045E;
 .home-main {
     width: 100%;
     height: 100vh;
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -495,7 +495,7 @@ box-shadow:  35px 35px 70px #a46e6e,
 .bar {
     height: 20%;
     width: 100%;
-    background-color: rgb(59, 199, 199);
+    background-color: rgb(0, 0, 0);
     animation-name: tend;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -507,7 +507,7 @@ box-shadow:  35px 35px 70px #a46e6e,
 .bar1 {
   height: 20%;
   width: 100%;
-  background-color: rgb(59, 199, 199);
+  background-color: rgb(0, 0, 0);
   animation-name: tend1;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -538,26 +538,26 @@ box-shadow:  35px 35px 70px #a46e6e,
     animation-delay: 100ms;
 }
 .bar:nth-child(3) {
-    animation-delay: 200ms;
+    animation-delay: 150ms;
 }
 .bar:nth-child(4) {
-    animation-delay: 300ms;
+    animation-delay: 200ms;
 }
 .bar:nth-child(5) {
-    animation-delay: 400ms;
+    animation-delay: 250ms;
 }
 
 .bar1:nth-child(2) {
   animation-delay: 100ms;
 }
 .bar1:nth-child(3) {
-  animation-delay: 200ms;
+  animation-delay: 150ms;
 }
 .bar1:nth-child(4) {
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 .bar1:nth-child(5) {
-  animation-delay: 400ms;
+  animation-delay: 250ms;
 }
 
 

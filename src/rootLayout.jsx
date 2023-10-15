@@ -12,7 +12,7 @@ const RootLayout = () => {
     setToggle(true);
     const timout = setTimeout(() => {
       setToggle(false);
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(timout);
   }, [location.pathname]);
 

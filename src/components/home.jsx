@@ -1,36 +1,40 @@
 import { services } from '../lib/services';
+import Rhythm from './rhythm';
 
 const Home = () => {
   return (
     <>
-      <section className="home-main">
-        <div className="group relative cursor-pointer border border-gray-700 rounded-sm transition p-4 ease-in-out duration-500 hover:border-gray-100 hover:scale-110">
-          <div className="uppercase max-md:text-base text-4xl flex items-center relative">
-            {'Varahisoft: The IT Solution You Need'
-              .split('')
-              .map((letter, i) => (
-                <h1
-                  key={i}
-                  className="origin-top transition-transform duration-300 ease-in-out group-hover:scale-y-0"
-                  style={{ transitionDelay: `${i * 75}ms` }}
-                >
-                  {letter}
-                </h1>
-              ))}
-          </div>
+      <section className="home-main  relative max-md:hidden ">
+        <Rhythm />
+        <div className="w-full  cursor-pointer absolute top-1/2 md:left-1/2  transform -translate-x-1/2 -translate-y-1/2 z-10">
+          <div className=" w-fit mx-auto group relative cursor-pointer border border-gray-700 rounded-sm transition p-4 ease-in-out duration-500 hover:border-gray-100 hover:scale-110">
+            <div className="uppercase max-md:text-base text-2xl font-bold  flex  items-center relative">
+              {'Varahisoft: The IT Solution You Need'
+                .split('  ')
+                .map((letter, i) => (
+                  <h1
+                    key={i}
+                    className="origin-top transition-transform duration-300 ease-in-out group-hover:scale-y-0"
+                    style={{ transitionDelay: `${i * 75}ms` }}
+                  >
+                    {letter}
+                  </h1>
+                ))}
+            </div>
 
-          <div className="uppercase  max-md:text-base text-4xl absolute bottom-4 left-4 flex items-center">
-            {'Varahisoft: The IT Solution You Need'
-              .split('')
-              .map((letter, i) => (
-                <h1
-                  key={i}
-                  className="origin-bottom duration-300 transition-transform ease-in-out scale-y-0 group-hover:scale-y-100"
-                  style={{ transitionDelay: `${i * 75}ms` }}
-                >
-                  {letter}
-                </h1>
-              ))}
+            <div className="uppercase  max-md:text-base text-2xl font-bold  absolute bottom-4 left-4 flex items-center">
+              {'Varahisoft: The IT Solution You Need'
+                .split('  ')
+                .map((letter, i) => (
+                  <h1
+                    key={i}
+                    className="origin-bottom duration-300 transition-transform ease-in-out scale-y-0 group-hover:scale-y-100"
+                    style={{ transitionDelay: `${i * 75}ms` }}
+                  >
+                    {letter}
+                  </h1>
+                ))}
+            </div>
           </div>
         </div>
       </section>

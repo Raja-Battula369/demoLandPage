@@ -4,7 +4,7 @@ import logo2 from '../assets/logo2.png';
 const Footer = () => {
   return (
     <footer className=" w-[100%] border border-neutral-700 bg-[#F6F6F6] ">
-      <address className="w-full font1 flex flex-col lg:flex-row justify-center items-center gap-2">
+      <address className="w-full font2 flex flex-col lg:flex-row justify-center items-center gap-2">
         <div className="flex justify-center items-center gap-2">
           <h1 className=" font-bold">Address :</h1>
           <p className="self-end">
