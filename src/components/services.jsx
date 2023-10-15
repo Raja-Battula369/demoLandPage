@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div>
       <div className="relative max-md:hidden">
-        <Rhythm />
+        <Rhythm color={'green'} />
         <h1 className="service-heading cursor-pointer absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 font-bold font1 text-8xl">
           Services
         </h1>

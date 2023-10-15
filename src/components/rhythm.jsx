@@ -5,7 +5,7 @@ const BIG_SIZE = 90;
 const SMALL_SIZE = 15;
 const PER_PX = 0.3;
 
-const Rhythm = () => {
+const Rhythm = ({ color }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   useEffect(() => {
     const handler = (e) => {
@@ -20,13 +20,13 @@ const Rhythm = () => {
   return (
     <div className="flex flex-wrap w-full gap-24 mx-auto p-12">
       {Array.from({ length: 84 }, (_, i) => (
-        <Dot key={i} mousePosition={mousePosition} />
+        <Dot key={i} mousePosition={mousePosition} color={color} />
       ))}
     </div>
   );
 };
 
-const Dot = ({ mousePosition }) => {
+const Dot = ({ mousePosition, color }) => {
   const size = useSpring(SMALL_SIZE, {
     damping: 30,
     stiffness: 200,
@@ -48,8 +48,8 @@ const Dot = ({ mousePosition }) => {
   return (
     <div ref={dotRef} className="relative -z-10">
       <motion.div
-        className=" bg-green-600 rounded-full absolute -translate-x-1/2 -translate-y-1/2 hidden md:block"
-        style={{ width: size, height: size }}
+        className="rounded-full absolute -translate-x-1/2 -translate-y-1/2 hidden md:block"
+        style={{ width: size, height: size, backgroundColor: color }}
       ></motion.div>
     </div>
   );

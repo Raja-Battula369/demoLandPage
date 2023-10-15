@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <section className="home-main  relative max-md:hidden ">
-        <Rhythm />
+        <Rhythm color="orange" />
         <div className="w-full  cursor-pointer absolute top-1/2 md:left-1/2  transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className=" w-fit mx-auto group relative cursor-pointer border border-gray-700 rounded-sm transition p-4 ease-in-out duration-500 hover:border-gray-100 hover:scale-110">
             <div className="uppercase max-md:text-base text-2xl font-bold  flex  items-center relative">
@@ -63,10 +63,10 @@ const Home = () => {
               </h1>
               <img
                 src={service.img}
-                className="overflow-hidden w-full h-[150px]"
+                className="overflow-hidden w-full object-contain h-[150px]"
                 alt={service.name}
               />
-              <p className="para">{service.details}</p>
+              <p className="para font2 ">{service.details}</p>
             </div>
           </div>
         ))}
