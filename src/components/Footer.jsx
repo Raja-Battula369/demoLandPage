@@ -1,5 +1,5 @@
-import logo1 from '../assets/logo_clipdrop-enhance.png';
-import logo2 from '../assets/logo2.jpg';
+import logo1 from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 
 const Footer = () => {
   return (

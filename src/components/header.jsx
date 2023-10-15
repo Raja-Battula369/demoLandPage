@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
-import logo1 from '../assets/logo.jpg';
-import logo2 from '../assets/logo2.jpg';
+import logo1 from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import { useState } from 'react';
 
 const Header = () => {
