@@ -16,11 +16,11 @@ const Header = () => {
       >
         <img
           src={logo1}
-          className="w-[80px] h-[90px] mix-blend-darken max-sm:z-50   "
+          className="w-[120px] h-[90px] mix-blend-darken max-sm:z-50   "
         />
         <img
           src={logo2}
-          className="w-[80px] h-[90px] mix-blend-darken max-sm:z-50  "
+          className="w-[120px] h-[90px] mix-blend-darken max-sm:z-50  "
         />
       </div>
       <div className="header-routers ">

@@ -48,7 +48,7 @@ font-family: 'Young Serif', serif;
 display: flex;
 justify-content: center;
 align-items: flex-end;
-gap: 0.5rem;
+gap: 5rem;
 color: #03045E;
 
 }
@@ -346,9 +346,9 @@ color: #03045E;
 
 .shadow-effect1 {
   border-radius: 21px;
-background: #c18181;
-box-shadow:  35px 35px 70px #a46e6e,
-             -35px -35px 70px #de9494;
+background: #f0eaea;
+box-shadow:  35px 35px 70px #ccc7c7,
+             -35px -35px 70px #ffffff;
 
 
 }

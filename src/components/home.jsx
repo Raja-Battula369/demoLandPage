@@ -9,8 +9,8 @@ const Home = () => {
         <div className="w-full  cursor-pointer absolute top-1/2 md:left-1/2  transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className=" w-fit mx-auto group relative cursor-pointer border border-gray-700 rounded-sm transition p-4 ease-in-out duration-500 hover:border-gray-100 hover:scale-110">
             <div className="uppercase max-md:text-base text-2xl font-bold  flex  items-center relative">
-              {'Varahisoft: The IT Solution You Need'
-                .split('  ')
+              {'Varahisoft-The-IT-Solution-You-Need'
+                .split('')
                 .map((letter, i) => (
                   <h1
                     key={i}
@@ -23,8 +23,8 @@ const Home = () => {
             </div>
 
             <div className="uppercase  max-md:text-base text-2xl font-bold  absolute bottom-4 left-4 flex items-center">
-              {'Varahisoft: The IT Solution You Need'
-                .split('  ')
+              {'Varahisoft-The-IT-Solution-You-Need'
+                .split('')
                 .map((letter, i) => (
                   <h1
                     key={i}
